@@ -57,22 +57,15 @@ react-playground/
 
 ### Prerequisites
 
-- Node.js (>= 16)
+- Node.js (>= 18)
 - npm or yarn
-
-### 📥 Installation
-
-- git clone https://github.com/your-username/react-playground.git
-- cd react-playground
-- npm install
-
 
 ### ▶️ Start the Application
 
-- npm start
+- npm run dev
 
 # The application will be available at:
-- http://localhost:3000
+- http://localhost:5173
 
 ### 🧪 Testing the Application
 
