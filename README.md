@@ -4,12 +4,6 @@ A structured playground to practice and experiment with core and advanced React.
 
 ---
 
-### 👩‍💻 Author
-
-Alweena Iqbal
-Front-End Developer
-Passionate about building scalable, high-performance user interfaces.
-
 ## 🎯 Purpose
 
 This repository is created to:
@@ -156,11 +150,6 @@ react-playground/
 
 ## Screenshots (if UI related)
 - Attach screenshots or gifs
-
-## Checklist
-- [ ] Code builds successfully
-- [ ] Tests added/updated
-- [ ] No breaking changes
 
 ## 📌 Notes
 
