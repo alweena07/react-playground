@@ -1,6 +1,6 @@
 export const Home = () => {
   return <div>
-    <p>Welcome to the React Sandbox!</p>
+    <div>Welcome to the React Sandbox!</div>
     <a href="/todo">Go to Todo Page</a>
   </div>;
 }
