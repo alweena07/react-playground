@@ -90,7 +90,7 @@ react-playground/
 
 ###  📝 Commit Message Guidelines
 
-- <type>: <short description>
+- `<type>: <short description>`
 
 ## Commit Types
 
