@@ -2,5 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 echo "🔥 PRE-COMMIT HOOK IS RUNNING"
-exit 1
 npx lint-staged
