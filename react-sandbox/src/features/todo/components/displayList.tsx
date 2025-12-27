@@ -1,13 +1,35 @@
+import { Button } from "../../../shared/components/button";
+import { CheckBox } from "../../../shared/components/checkBox";
 import type { DisplayListProps } from "../types";
+import { MdDelete } from "react-icons/md";
 
-export const DisplayList = ({ todos }: DisplayListProps) => {
+export const DisplayList = ({ todos, onChange, onDelete }: DisplayListProps) => {
   return (
-    <ul>
+    <div className="todo-list">
       {todos.map((todo) => (
-        <li key={todo.id}>
-          {todo.text} {todo.completed ? "(Completed)" : "(Pending)"}
-        </li>
+        <div key={todo.id} className="todo-item">
+          <div className="todo-left">
+            <CheckBox
+              checked={todo.completed}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                onChange(todo.id, e.target.checked)
+              }
+            />
+            <span
+              className="todo-text"
+              style={{ textDecoration: todo.completed ? "line-through" : "none" }}
+            >
+              {todo.text}
+            </span>
+          </div>
+
+          <div className="todo-actions">
+            <Button style={{ backgroundColor: "transparent", border: "none", marginTop: "0.2rem" }} onClick={() => onDelete(todo.id)}>
+              <MdDelete size={20} color="red" />
+            </Button>
+          </div>
+        </div>
       ))}
-    </ul>
+    </div>
   );
-}
+};

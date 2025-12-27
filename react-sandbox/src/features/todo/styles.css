@@ -1,4 +1,30 @@
 .add-todo-container {
-   display: flex;
-   gap: 0.5em;
- }
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0rem;
+  position: relative;
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-actions {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.todo-item:hover .todo-actions {
+  opacity: 1;
+  pointer-events: auto;
+}
