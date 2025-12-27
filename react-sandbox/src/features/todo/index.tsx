@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "./components/button"
-import { InputBox } from "./components/inputBox"
+import { Button } from "../../shared/components/button"
+import { InputBox } from "../../shared/components/inputBox"
 import type { TodoItem } from "./types";
 import { DisplayList } from "./components/displayList";
 import "./styles.css";
@@ -19,6 +19,16 @@ export const TodoPage = () => {
     setTodos([...todos, newTodo]);
   }
 
+  const changeStatus = (id: number, checked: boolean) => {
+    setTodos(todos.map(todo => 
+      todo.id === id ? { ...todo, completed: checked } : todo
+    ));
+  }
+
+  const deleteTodo = (id: number) => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  }
+
   return (
     <div>
       <h1>Todo List</h1>
@@ -26,7 +36,7 @@ export const TodoPage = () => {
         <InputBox placeholder="Enter a new todo" onChange={setInputValue} value={inputValue} />
         <Button onClick={() => addTodo()} label="Add Todo" />
       </div>
-      <DisplayList todos={todos} />
+      <DisplayList todos={todos} onChange={changeStatus} onDelete={deleteTodo} />
     </div>
   )
 }
