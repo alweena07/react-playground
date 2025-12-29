@@ -1,4 +1,4 @@
-import { Button } from "@/shared/components/button";
+import { Button } from "@/shared/components/Button";
 import { useState } from "react";
 
 export const Counter = () => {
