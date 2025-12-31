@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "../../shared/components/button"
-import { InputBox } from "../../shared/components/inputBox"
+import { Button } from "@/shared/components/Button"
+import { InputBox } from "@/shared/components/InputBox"
 import type { TodoItem } from "./types";
 import { DisplayList } from "./components/displayList";
 import "./styles.css";

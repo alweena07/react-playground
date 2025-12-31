@@ -1,5 +1,5 @@
-import { Button } from "../../../shared/components/button";
-import { CheckBox } from "../../../shared/components/checkBox";
+import { Button } from "@/shared/components/Button";
+import { CheckBox } from "@/shared/components/CheckBox";
 import type { DisplayListProps } from "../types";
 import { MdDelete } from "react-icons/md";
 

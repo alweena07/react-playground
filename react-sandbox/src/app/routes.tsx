@@ -3,8 +3,10 @@ import { lazy } from "react";
 
 const TodoPage = lazy(() => import("@/features/todo").then(mod => ({ default: mod.TodoPage })));
 const HomePage = lazy(() => import("@/features/home").then(mod => ({ default: mod.Home })));
+const CounterPage = lazy(() => import("@/features/counter").then(mod => ({ default: mod.Counter })));
 
 export const routes: RouteObject[] = [
   { path: "/", element: <HomePage /> },
   { path: "/todo", element: <TodoPage /> },
+  { path: "/counter", element: <CounterPage /> },
 ];
