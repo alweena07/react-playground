@@ -82,7 +82,7 @@ function SearchComponent() {
     const onChange = async (value: string) => {
         setValue(value);
     };
-
+ console.log('minor commit')
     return (
         <>
             <InputBox value={value} onChange={onChange} />
