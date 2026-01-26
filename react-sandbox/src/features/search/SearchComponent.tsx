@@ -19,7 +19,7 @@ function SearchComponent() {
 
     const cacheRef = useRef<Record<string, SearchDoc[]>>({});
 
-    // ✅ SOLUTION 1 (REQUIRED): Add debouncing
+    // SOLUTION 1: Add debouncing
     // useEffect(() => {
     //     if (!value) return;
     //     const timer = setTimeout(async () => {
@@ -34,7 +34,7 @@ function SearchComponent() {
     //     return () => clearTimeout(timer);
     // }, [value]);
 
-    // ✅ SOLUTION 2 (BEST PRACTICE): Abort previous requests and caching using useRef
+    // SOLUTION 2: Abort previous requests and caching using useRef
 
     useEffect(() => {
         if (value.trim().length < 3) {
