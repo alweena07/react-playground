@@ -5,5 +5,7 @@ export const Home = () => {
     <a href="/todo">Go to Todo Page</a>
     <br />
     <a href="/counter">Go to Counter Page</a>
+    <br />
+    <a href="/search">Go to the Search Component</a>
   </div>;
 }

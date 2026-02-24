@@ -10,6 +10,7 @@ export interface InputBoxProps {
   onChange?: (value: string) => void;
   style?: React.CSSProperties;
   value?: string;
+  type?:string
 }
 
 export interface CheckBoxProps {
